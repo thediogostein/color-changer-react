@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import styles from './ColorBox.module.css';
 
-const ColorBox = () => {
+const ColorBox = ({ color }) => {
+  const [squareColor, setSquareColor] = useState('');
   return (
-    <div className={`wrapper styling-components ${styles['color-box']}`}>
-      ColorBox
+    <div
+      className={`wrapper ${styles['color-box']}`}
+      style={{ backgroundColor: color }}
+    >
+      {color ? color : 'Empty value'}
     </div>
   );
 };
