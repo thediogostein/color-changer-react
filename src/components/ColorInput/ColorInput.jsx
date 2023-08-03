@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './ColorInput.module.css';
 
-const ColorInput = ({ color, setColor }) => {
+const ColorInput = ({ color, setColor, setIsDarkText }) => {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
@@ -16,6 +16,9 @@ const ColorInput = ({ color, setColor }) => {
         onChange={(e) => setColor(e.target.value)}
         value={color}
       />
+      <button type="button" onClick={() => setIsDarkText((prev) => !prev)}>
+        Toggle color
+      </button>
     </form>
   );
 };

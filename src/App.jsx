@@ -5,11 +5,16 @@ import { useState } from 'react';
 
 function App() {
   const [color, setColor] = useState('');
+  const [isDarkText, setIsDarkText] = useState(true);
 
   return (
     <div className="App">
-      <ColorBox color={color} />
-      <ColorInput color={color} setColor={setColor} />
+      <ColorBox color={color} isDarkText={isDarkText} />
+      <ColorInput
+        color={color}
+        setColor={setColor}
+        setIsDarkText={setIsDarkText}
+      />
     </div>
   );
 }

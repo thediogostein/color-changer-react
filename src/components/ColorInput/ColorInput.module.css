@@ -4,12 +4,21 @@
   margin: 0 auto;
 }
 
-.color-input input {
+.color-input input,
+.color-input button {
   width: 22rem;
   padding: 0.75rem;
   margin: 0 auto;
   display: block;
   font-size: 1.6rem;
+}
+
+.color-input input {
+  margin-bottom: 1rem;
+}
+
+.color-input button {
+  cursor: pointer;
 }
 
 .sr-only {
