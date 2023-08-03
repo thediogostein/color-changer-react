@@ -4,12 +4,12 @@ import styles from './ColorBox.module.css';
 const ColorBox = ({ color }) => {
   const [squareColor, setSquareColor] = useState('');
   return (
-    <div
+    <section
       className={`wrapper ${styles['color-box']}`}
       style={{ backgroundColor: color }}
     >
       {color ? color : 'Empty value'}
-    </div>
+    </section>
   );
 };
 
