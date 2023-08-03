@@ -1,10 +1,13 @@
+import ColorBox from './components/ColorBox/ColorBox';
+import ColorInput from './components/ColorInput/ColorInput';
 import './App.css';
 
 function App() {
   return (
-    <>
-      <div>app</div>
-    </>
+    <div className="App">
+      <ColorBox />
+      <ColorInput />
+    </div>
   );
 }
 
